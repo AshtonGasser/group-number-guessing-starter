@@ -7,10 +7,56 @@
   <title>Guess A Number!</title>
   <script src="vendors/jquery.min.js"></script>
   <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="vendors/bootstrap.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>YOUR GAME HERE!</h1>
+  <header>
+    <h1>The Number Guessing Game!!!!</h1>
+  </header>
+  <br><br>
+
+  <!-- Area to display player inputs below: -->
+  <div id="inputArea">
+    <input class="playerInputs" id="player1Input" type="number" placeholder="Player 1 Guess?">
+    <input class="playerInputs" id="player2Input" type="number" placeholder="Player 2 Guess?">
+    <input class="playerInputs" id="player3Input" type="number" placeholder="Player 3 Guess?">
+    <input class="playerInputs" id="player4Input" type="number" placeholder="Player 4 Guess?">
+    <button id="submitButton"  class="btn btn-success">Submit Guesses</button>
+    <button id="restartButton" class="btn btn-danger">Restart The Game</button> 
+  </div>
+  <br><br>
+
+  <!-- Area to display previous guesses below: -->
+  <div id="scoreBoardArea">
+    <table id="scoreBoard" class="table table-striped table-bordered">
+      <thead>
+          <tr>
+              <th>Round #</th>
+              <th colspan="2">Player 1 Guesses</th>
+              <th colspan="2">Player 2 Guesses</th>
+              <th colspan="2">Player 3 Guesses</th>
+              <th colspan="2">Player 4 Guesses</th>
+          </tr>
+      </thead>
+      <tbody id="previousGuesses">
+        <tr>
+          <td>Round#</td>
+          <td>Player1Guess</td>
+          <td>Player1WinLose</td>
+          <td>Player2Guess</td>
+          <td>Player2WinLose</td>
+          <td>Player3Guess</td>
+          <td>Player3WinLose</td>
+          <td>Player4Guess</td>
+          <td>Player4WinLose</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
 </body>
 </html>
