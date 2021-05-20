@@ -36,18 +36,19 @@
 - [ ] HTML:
     - [X] Add input fields to match the number of people in your group. 
     - [ ] Add area to display: 
-        - [ ] After submitting a round of guesses, retrieve all of the previous guesses (GET) and display them on the screen.
-        - [ ] Let each user know whether their guess was correct, too low or too high.
+        - [X] After submitting a round of guesses, retrieve all of the previous guesses (GET) and display them on the screen.
+        - [X] Let each user know whether their guess was correct, too low or too high.
         - [X] a submit guesses button (submits all guesses at the same time)
-        - [ ] total guesses made indicator (think of this as rounds in a game)
+        - [X] total guesses made indicator (think of this as rounds in a game)
         - [ ] if a guess is correct PROMINENTLY Display which player won (make 'em FEEL it)
         - [X] if there is a winner, a restart button that tells the server to select a new random number (POST)
 
 
 - [ ] CSS: 
-    - [ ] Add winner class to toggle when player wins. 
+    - [ ] Toggle a bootstrap class for the winner. 
 
 
 - [ ] Optional ideas for later:
     - [ ] Inputs for player names, to be displayed at the top of their game tracking area
     - [ ] Track total games won by each player
+    - [ ] Prevent players from guessing any numbers that aren't between 1-25 with an alert. 
