@@ -16,21 +16,21 @@
                         - [X] Make sure to source in jQuery
                 - [X] Make styles folder
                     - [X] Make style.css file here
-                    - [ ] Source in bootstrap if you like
+                    - [X] Source in bootstrap if you like
                 - [X] Make vendors folder
                     - [X] Add jQuery.js file here
 
 
-- [ ] LOGIC/TRACKING NEEDED
-    - [ ] Generate a random number between 1 and 25
-        - [ ] Done as a function
-        - [ ] Done and stored on the server
-    - [ ] Compare numbers sent from inputs to random number
-        - [ ] All done on server
-    - [ ] Total guesses tracked per game round
-        - [ ] Stored on server
-        - [ ] Reset after game is finished
-    - [ ] Compare guesses against random number, return too low or too high
+- [X] LOGIC/TRACKING NEEDED
+    - [X] Generate a random number between 1 and 25
+        - [X] Done as a function
+        - [X] Done and stored on the server
+    - [X] Compare numbers sent from inputs to random number
+        - [X] All done on server
+    - [X] Total guesses tracked per game round
+        - [X] Stored on server
+        - [X] Reset after game is finished
+    - [X] Compare guesses against random number, return too low or too high
 
 
 - [ ] HTML:

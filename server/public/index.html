@@ -11,59 +11,61 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <div class='container header'>
-    <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container d-flex py-5 justify-content-center">
-        <h1 class="display-5 fw-bold">The Number Guessing Game!</h1>
+<div class="wrapper"> <!--wraps the body for responsive page-->
+  <body>
+    <div class='container header'>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container d-flex py-5 justify-content-center">
+          <h1 class="display-5 fw-bold">The Number Guessing Game!</h1>
+        </div>
       </div>
+      <!-- <header>
+      <h1>The Number Guessing Game!</h1>
+    </header> -->
+    <br><br>
+
+    <!-- Area to display player inputs below: -->
+    <div id="inputArea">
+      <input class="playerInputs btn btn-outline-primary" id="player1Input" type="number" placeholder="Player 1 Guess?">
+      <input class="playerInputs btn btn-outline-success" id="player2Input" type="number" placeholder="Player 2 Guess?">
+      <input class="playerInputs btn btn-outline-danger" id="player3Input" type="number" placeholder="Player 3 Guess?">
+      <input class="playerInputs btn btn-outline-warning" id="player4Input" type="number" placeholder="Player 4 Guess?">
+      <br><br>
+      <button id="submitButton"  class="btn btn-success">Submit Guesses</button>
+      <button id="restartButton" class="btn btn-danger">Restart The Game</button> 
     </div>
-    <!-- <header>
-    <h1>The Number Guessing Game!</h1>
-  </header> -->
-  <br><br>
+    <br><br>
 
-  <!-- Area to display player inputs below: -->
-  <div id="inputArea">
-    <input class="playerInputs btn btn-outline-primary" id="player1Input" type="number" placeholder="Player 1 Guess?">
-    <input class="playerInputs btn btn-outline-success" id="player2Input" type="number" placeholder="Player 2 Guess?">
-    <input class="playerInputs btn btn-outline-danger" id="player3Input" type="number" placeholder="Player 3 Guess?">
-    <input class="playerInputs btn btn-outline-warning" id="player4Input" type="number" placeholder="Player 4 Guess?">
-    <button id="submitButton"  class="btn btn-success">Submit Guesses</button>
-    <button id="restartButton" class="btn btn-danger">Restart The Game</button> 
-  </div>
-  <br><br>
-
-  <!-- ⬇ Area to display previous guesses below: -->
-  <div id="scoreBoardArea">
-    <table id="scoreBoard" class="table 
-    table-hover table-striped table-bordered">
-      <thead>
-          <tr>
-              <th>Round #</th>
-              <th colspan="2">Player 1 Guesses</th>
-              <th colspan="2">Player 2 Guesses</th>
-              <th colspan="2">Player 3 Guesses</th>
-              <th colspan="2">Player 4 Guesses</th>
-          </tr>
-      </thead>
-      <tbody id="guessOutput"> 
-        <!-- ⬇ Will append to the DOM below: -->
-        <tr>
-          <td class="roundNum">Round#</td>
-          <td class="p1GuessCell">Player1Guess</td>
-          <td class="p1WinCell">Player1WinLose</td>
-          <td class="p2GuessCell">Player2Guess</td>
-          <td class="p2WinCell">Player2WinLose</td>
-          <td class="p3GuessCell">Player3Guess</td>
-          <td class="p3WinCell">Player3WinLose</td>
-          <td class="p4GuessCell">Player4Guess</td>
-          <td class="p4WinCell">Player4WinLose</td>
-        </tr>
-        <!-- ⬆ Will append to the DOM above. -->
-      </tbody>
-    </table>
-  </div>
-
+    <!-- ⬇ Area to display previous guesses below: -->
+    <div id="scoreBoardArea">
+      <table id="scoreBoard" class="table 
+      table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Round #</th>
+                <th colspan="2">Player 1 Guesses</th>
+                <th colspan="2">Player 2 Guesses</th>
+                <th colspan="2">Player 3 Guesses</th>
+                <th colspan="2">Player 4 Guesses</th>
+            </tr>
+        </thead>
+        <tbody id="guessOutput"> 
+          <!-- ⬇ Will append to the DOM below: -->
+          <!-- <tr>
+            <td class="roundNum">Round#</td>
+            <td class="p1GuessCell">Player1Guess</td>
+            <td class="p1WinCell">Player1WinLose</td>
+            <td class="p2GuessCell">Player2Guess</td>
+            <td class="p2WinCell">Player2WinLose</td>
+            <td class="p3GuessCell">Player3Guess</td>
+            <td class="p3WinCell">Player3WinLose</td>
+            <td class="p4GuessCell">Player4Guess</td>
+            <td class="p4WinCell">Player4WinLose</td>
+          </tr> -->
+          <!-- ⬆ Will append to the DOM above. -->
+        </tbody>
+      </table>
+    </div>
+</div> <!--wraps the body for responsive page-->
 </body>
 </html>
